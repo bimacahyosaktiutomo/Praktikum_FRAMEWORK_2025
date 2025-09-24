@@ -12,7 +12,7 @@ npm install
 
 3. **Salin .env dan generate key**
 ```bash
-cp .env.example .env
+copy .env.example .env
 php artisan key:generate
 ```
 
