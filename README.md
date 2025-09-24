@@ -1,6 +1,6 @@
 1. **Clone repository**
 ```bash
-git clone https://github.com/username/nama-proyek.git
+git clone [https://github.com/username/nama-proyek.git](https://github.com/bimacahyosaktiutomo/Praktikum_FRAMEWORK_2025.git)
 cd nama-proyek
 ```
 
