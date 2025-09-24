@@ -1,7 +1,7 @@
 1. **Clone repository**
 ```bash
 git clone https://github.com/bimacahyosaktiutomo/Praktikum_FRAMEWORK_2025.git
-cd nama-proyek
+cd pertemuan_4/proyek
 ```
 
 2. **Install dependencies**
