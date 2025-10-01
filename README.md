@@ -1,0 +1,27 @@
+1. **Clone repository**
+```bash
+git clone https://github.com/bimacahyosaktiutomo/Praktikum_FRAMEWORK_2025.git
+cd pertemuan_4/proyek
+```
+
+2. **Install dependencies**
+```bash
+composer install
+npm install
+```
+
+3. **Salin .env dan generate key**
+```bash
+copy .env.example .env
+php artisan key:generate
+```
+
+5. **Migrate Database jika perlu**
+```bash
+php artisan migrate
+```
+
+6. **Run**
+```bash
+composer run dev
+```
