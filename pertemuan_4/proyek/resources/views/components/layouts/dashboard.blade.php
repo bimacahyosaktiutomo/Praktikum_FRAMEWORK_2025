@@ -1,3 +1,5 @@
+@props(['title' => 'Dashboard'])
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,18 +20,22 @@
     
     @endif
 </head>
-<body class="flex flex-col min-h-screen items-center gap-2 bg-indigo-100">
+<body class="flex min-h-screen items-center gap-2 bg-indigo-100">
 
-    <!-- NAVBAR -->
-    <x-navbar />
+    <div class=" fixed top-0 min-h-screen flex items-center">
+        <x-dashboard.sidebar />
+    </div>
 
-    <!-- MAIN -->
-    <main class="flex-grow flex flex-col items-center w-full">
-        {{ $slot }}
-    </main>
-
-    <!-- FOOTER -->
-    <x-footer />
+    <div class=" flex flex-col min-h-screen gap-2 bg-indigo-100 w-full items-center">
+        <!-- NAVBAR -->
+        <x-dashboard.navbar />
+    
+    
+        <!-- MAIN -->
+        <main class="flex-grow flex flex-col ">
+            {{ $slot }}
+        </main>
+    </div>
 
 </body>
 </html>

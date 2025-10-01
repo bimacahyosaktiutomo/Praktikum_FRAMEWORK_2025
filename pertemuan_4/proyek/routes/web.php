@@ -1,35 +1,35 @@
 <?php
 
-use App\Models\Students;
+use App\Models\Lecturer;
+use App\Models\Student;
 use Illuminate\Support\Facades\Route;
 
-// 1
 Route::get('/', function () {
-    $data = [
-        [
-            'id' => 1,
-            'name' => 'albedo',
-            'img' => 'https://sunderarmor.com/GENSHIN/Characters/1/Albedo.png'
-        ],
-        [
-            'id' => 2,
-            'name' => 'alex',
-            'img' => 'https://sunderarmor.com/GENSHIN/Characters/1/Nahida.png'
-        ],
-        [
-            'id' => 3,
-            'name' => 'aldi',
-            'img' => 'https://sunderarmor.com/GENSHIN/Characters/1/Alhaitham.png'
-        ],
-        [
-            'id' => 4,
-            'name' => 'andi',
-            'img' => 'https://sunderarmor.com/GENSHIN/Characters/1/Ayato.png'
-        ]
-    ];
+
+    $data = Student::all();
 
     return view('welcome', [
-        "title" => "Welcome",
         "data" => $data
     ]);
 })->name('welcome');
+
+Route::get('/student-dashboard', function () {
+
+    $data = Student::all();
+
+    return view('studentsDashboard', [
+        "data" => $data,
+        "title" => "Students Dashboard"
+    ]);
+})->name('dashboard.students');
+
+
+// Route::get('/lecturer-dashboard', function () {
+
+//     $data = Lecturer::all();
+
+//     return view('lecturerDashboard', [
+//         "data" => $data,
+//         "title" => "Lecturer Dashboard"
+//     ]);
+// })->name('dashboard.lecturers');

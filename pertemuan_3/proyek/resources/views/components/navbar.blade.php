@@ -3,7 +3,7 @@
         <div class="w-20 font-bold">
             <h1>FrameWork</h1>
         </div>
-        <h1 class="hover:text-indigo-700 duration-100 font-semibold"><a href="{{ route('dashboard.students') }}">Dashboard</a></h1>
+        <h1 class="hover:text-indigo-700 duration-100"><a href="">Dashboard</a></h1>
     </div>
     <ul class="flex gap-2">
         <li class="hover:translate-0.5 text-white duration-100 p-1.5 bg-gradient-to-br from-indigo-300 to-indigo-500 rounded-2xl"><a href="">Beranda</a></li>
